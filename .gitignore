@@ -1,0 +1,6 @@
+app/*
+share/include/*
+share/man/*
+share/src/*
+sys/bin/*
+sys/lib/*

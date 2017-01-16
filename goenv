@@ -1,0 +1,18 @@
+#!/bin/bash
+
+export GOLINUX=/opt/golinux
+export PATH=$GOLINUX/sys/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GOLINUX/sys/lib
+
+export CFLAGS="-I$GOLINUX/share/include -L$GOLINUX/sys/lib $CFLAGS"
+export PKG_CONFIG_PATH=$GOLINUX/sys/lib/pkgconfig:$PKG_CONFIG_PATH
+export MANPATH=$GOLINUX/share/man:$MANPATH
+
+#export LIBGL_DRIVERS_PATH=$GOLINUX/lib/dri
+
+export GOROOT=$GOLINUX/app/Golang/Current
+export GOARCH=amd64
+export GOOS=linux
+export GOBIN=$GOLINUX/sys/bin
+export GOPATH=~/.local/golang
+
